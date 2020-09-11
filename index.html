@@ -6,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>RegexFactory</title>
 </head>
-<script src="./RegexFactory.js"></script>
+<script src="./RegexHelper.js"></script>
 <script>
     window.onload = function() {
-        var regexFactory = new RegexFactory();
-        regexFactory.test();
+        var rf = new RegexHelper();
+        console.log(rf.check(RegexHelper.NUM, "0123456789"));
+        console.log(rf.check(RegexHelper.NUM, "a12345"));
     }
 </script>
 <body>
