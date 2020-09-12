@@ -6,7 +6,7 @@
  * @see https://github.com/downingmoon
  */
 class FormValidHelper {
-
+    constructor () {}
     /**
      * Form Validation
      * @param {Object} frm Form Object(document.formName)
@@ -23,7 +23,7 @@ class FormValidHelper {
             if(i.value == "" || i.value === undefined || i.value == null) {
                 res = false;
                 alert(msg);
-                break;
+                return false;
             }
         });
         return res;

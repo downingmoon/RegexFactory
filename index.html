@@ -7,14 +7,35 @@
     <title>RegexFactory</title>
 </head>
 <script src="./RegexHelper.js"></script>
+<script src="./FormValidHelper.js"></script>
 <script>
     window.onload = function() {
+        /* Regex */
         var rf = new RegexHelper();
         console.log(rf.check(RegexHelper.NUM, "0123456789"));
         console.log(rf.check(RegexHelper.NUM, "a12345"));
+
+        /* Form */
+
+    }
+
+    function setHiddenValue() {
+        document.querySelector("input:hidden").value = "1";
+    }
+    function validate(hiddenYn = 'N') {
+        if(FormValidHelper.nullCheck(document.example, hiddenYn)) {
+            alert('Ok')
+        }
     }
 </script>
 <body>
-    
+    <form name="example">
+        <input type="hidden" value="">
+        <input type="text"><br>
+        <textarea rows="4"></textarea><br>
+        <button type="button" onclick="javascript:setHiddenValue();">Setting Hidden Value</button><br>
+        <button type="button" onclick="javascript:validate();">Validate</button><br>
+        <button type="button" onclick="javascript:validate('Y');">Validate Hidden</button><br>
+    </form>
 </body>
 </html>
