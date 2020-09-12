@@ -3,7 +3,7 @@
  * Javascript Regular Expression Helper
  * Author: DowningMoon
  * 2020.09.11
- * @see https://github.com/downingmoon
+ * @see https://github.com/downingmoon/RegexFactory
  */
 class RegexHelper {
     /**
