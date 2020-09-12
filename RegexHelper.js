@@ -1,6 +1,6 @@
 'use strict'
 /**
- * Javascript Regular Expression Factory
+ * Javascript Regular Expression Helper
  * Author: DowningMoon
  * 2020.09.11
  * @see https://github.com/downingmoon
